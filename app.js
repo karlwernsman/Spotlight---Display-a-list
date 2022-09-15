@@ -1,8 +1,16 @@
 // import functions and grab DOM elements
+import { frogs } from './frogs-data.js';
+import { renderFrog } from './render-frog.js';
 
-// initialize global state
+const frogList = document.getElementById('frog-list');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+function displayFrogs() {
+    frogList.innerHTML = '';
+
+    for (let frog of frogs) {
+        const frogElement = renderFrog(frog);
+        frogList.append(frogElement);
+    }
+}
+
+displayFrogs();
