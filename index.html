@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Lists of Things</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Lists of Things</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Lists of Things</h1>
+        </header>
 
-</head>
+        <main>
+            <section>
+                <h2>Frogs</h2>
+                <ul id="frog-list">
+                    <li class="frog-item">
+                        <h2>Red-Eyed Tree Frog</h2>
+                        <p>Agalychnis callidryas</p>
+                    </li>
+                </ul>
+            </section>
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Lists of Things</h1>
-    </header>
+            <section>
+                <h2>Houses</h2>
+                <ul id="house-list">
+                    <li id="house-item">
+                        <h2>1818 Square Drive</h2>
+                        <p>2000 sq ft for $4.3 million</p>
+                    </li>
+                </ul>
+            </section>
 
-    <main>
-        <section>
-            <h2>List 1</h2>
-            <ul id="list-1"></ul>
-        </section>
+            <section>
+                <h2>Clothes</h2>
+                <ul id="clothes-list">
+                    <li id="clothing-item">
+                        <h2>Shirt</h2>
+                        <p>Costco for $10</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>List 2</h2>
-            <ul id="list-2"></ul>
-        </section>
-
-        <section>
-            <h2>List 3</h2>
-            <ul id="list-3"></ul>
-        </section>
-
-        <section>
-            <h2>List 4</h2>
-            <ul id="list-4"></ul>
-        </section>
-
-
-
-    </main>
-
-</body>
-
+            <section>
+                <h2>Dogs</h2>
+                <ul id="dog-list">
+                    <li id="dog-item">
+                        <h2>Lottie</h2>
+                        <p>5 years old with a brindle and short length coat.</p>
+                    </li>
+            </section>
+        </main>
+    </body>
 </html>
