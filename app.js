@@ -5,10 +5,13 @@ import { houses } from './houses-data.js';
 import { renderHouse } from './render-house.js';
 import { clothes } from './clothes-data.js';
 import { renderClothing } from './render-clothing.js';
+import { dogs } from './dogs-data.js';
+import { renderDog } from './render-dog.js';
 
 const frogList = document.getElementById('frog-list');
 const houseList = document.getElementById('house-list');
 const clothesList = document.getElementById('clothes-list');
+const dogList = document.getElementById('dog-list');
 
 function displayFrogs() {
     frogList.innerHTML = '';
@@ -37,6 +40,16 @@ function displayClothes() {
     }
 }
 
+function displayDogs() {
+    dogList.innerHTML = '';
+
+    for (let dog of dogs) {
+        const dogElement = renderDog(dog);
+        dogList.append(dogElement);
+    }
+}
+
 displayFrogs();
 displayHouses();
 displayClothes();
+displayDogs();
